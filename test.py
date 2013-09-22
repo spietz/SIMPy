@@ -29,7 +29,7 @@ b = np.zeros(N)
 b[1:N] = -8/(N-1) ^ 2
 
 u1 = spsolve(A, b)  # direct solution
-u2, _, iter, _, G = SIMPy.solve(A, b, 
+u2, _, iter, _, G = SIMPy.solve(A, b,
             "sor", 500, 1e-4, 1, np.ones(N), False)  # iterative solution
 
 ## Plotting
