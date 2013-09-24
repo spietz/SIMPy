@@ -15,9 +15,7 @@ def my_diag(A):
 
 
 def solve(A, b, *vartuple):
-###############################################################################
-# SIMPy                                                                       #
-#   Solves system of linear equations A*x=b  using a stationary iterative     #
+""" Solves system of linear equations A*x=b  using a stationary iterative     #
 #   method. Terminates after maximum imax iterations, or when the inf-norm    #
 #   of the residual, relative the inf-norm of the initial residual, becomes   #
 #   less than tol. The following stationary iterative methods are             #
@@ -41,8 +39,7 @@ def solve(A, b, *vartuple):
 #   G      :  iteration matrix (expensive! - don"t request unless needed)     #
 # Note     :                                                                  #
 #   SIMPy is a python "conversion" of handout material from DTU course 41319  #
-###############################################################################
-
+"""
     # Set default input, if arguments are not given
     nvargin = len(vartuple)  # determine number of variable input arguments
 
