@@ -37,5 +37,6 @@ plt.plot(u1, z, '--o', linewidth=2, label="direct solution")
 plt.plot(u2, z, '--o', linewidth=2, label="iterative solution")
 plt.legend()
 plt.show()
+plt.ion()
 
 print("done!")
